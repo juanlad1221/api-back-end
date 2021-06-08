@@ -6,11 +6,12 @@ const app = express();
 
 
 
-app.use(bodyParser.json());
+
 //app.use(morgan)
 app.use(bodyParser.urlencoded({
-  extended: true
+  extended: false
 }));
+app.use(bodyParser.json());
 
 
 app.get('/api', (req, res) => {
