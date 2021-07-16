@@ -24,8 +24,8 @@ app.get('/api',async (req, res) => {
 })
  
 app.post('/apo',async (req, res) => {
-  //let id = req.body.id
-  let id='60df9ad9d24cd4a4265fcd91'
+  let id = req.body.id
+  //let id='60df9ad9d24cd4a4265fcd91'
   //Busco si existe la materia.
   let result = await Materias.where({_id:ObjectId(id)})
   console.log(req.body)
